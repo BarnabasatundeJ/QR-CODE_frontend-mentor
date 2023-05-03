@@ -113,8 +113,8 @@ body {
             /* background-color: red; */
       }
       .qr-text .qr_note {
-            padding: 0px 25px;
+            padding: 0px 24px;
             /* background: pink; */
-            font-size: 16px;
+            font-size: 15px;
       }
 }
