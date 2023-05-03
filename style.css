@@ -1,0 +1,120 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Outfit:400,400i, 700,700i');
+
+:root {
+      --bg: hsl(212, 45%, 89%);
+      --qr-bg: hsl(0, 0%, 100%);
+      --qr-h-text: hsl(218, 44%, 22%);
+      --qr-note-text:  hsl(220, 15%, 55%);
+}
+
+* {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+}
+
+
+body {
+      background-color: var(--bg);
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+}
+
+
+.wrapper {
+      height: 90%;
+      width: 90%;
+      /* background-color: white; */
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.wrapper .qr-container {
+      height: 100%;
+      width: 375px;
+      background-color: var(--qr-bg);
+      margin: auto;
+      border-radius: 18px;
+      padding: 20px;
+}
+
+
+.qr-container .qrcode-img {
+      /* background-color: rgba(239 239 239); */
+      height: 60%;
+      border-radius: 10px;
+}
+
+.qrcode-img img {
+      height: auto;
+      width: 100%;
+      border-radius: inherit;
+}
+
+.qr-container .qr-text {
+      height: 40%;
+      width: 100%;
+      /* background-color: red; */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+}
+
+.qr-text .head_text {
+      color: var(--qr-h-text);
+      font-family: outfit;
+      font-size: 1.5rem;
+      font-weight: 900;
+      padding: 30px;
+      height: 40%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* background-color: blue; */
+}
+
+.qr-text .qr_note {
+      /* background-color: pink; */
+      padding: 0px;
+      height: 40%;
+      padding: 0px 35px;
+      font-family: outfit;
+      color: var(--qr-note-text);
+      font-size: 17px;
+      font-weight: 500;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+}
+
+
+@media screen and (min-width: 1200px) {
+      .wrapper {
+            height: 100%;
+            width: 1140px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+      }
+      .wrapper .qr-container {
+            height: 86%;
+            width: 360px;
+            /* background-color: red; */
+      }
+      .qr-text .qr_note {
+            padding: 0px 25px;
+            /* background: pink; */
+            font-size: 16px;
+      }
+}
